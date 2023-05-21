@@ -18,6 +18,8 @@ cnt = 0
 #         cnt += 1
 #         arr.append(str)
 
+# 시간초과 원인 :count 메서드라 의심 (반복할 때 마다 리스트 전체 순회)
+
 for i in range(t):
     str = sys.stdin.readline()
     if str == "ENTER\n":
