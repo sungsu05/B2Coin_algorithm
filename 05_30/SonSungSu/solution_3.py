@@ -21,12 +21,39 @@
 # bottom left,right star = n - i -1
 # bottom left,right sp = i + 1
 
+# 반복문
 def solution(x, y):
     return ("*" * x) + (" " * (y + y)) + ("*" * x)
-
-
 n = int(input())
 for i in range(n):
     print(solution(i + 1, n - i - 1))
 for i in range(n):
     print(solution(n - i - 1, i + 1))
+
+
+# 재귀
+def solution(n,i):
+    if n<=0:
+        return n
+    print(("*"*i) + (" "*(n-1))*2 + ("*"*i))
+    solution(n-1,i+1)
+    if n-1 != 0:
+        print(("*"*i) + (" "*(n-1))*2 + ("*"*i))
+    return n
+
+n = int(input())
+solution(n,1)
+
+"""
+5 1 4 
+4 2 3
+3 3 2
+2 4 1
+1 5 0
+1 5 0 : pass
+2 4 1
+3 3 2
+4 2 3
+5 1 4
+
+"""
