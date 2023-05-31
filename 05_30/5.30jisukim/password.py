@@ -16,3 +16,21 @@ for i in strings:
         print("yes")
     else:
         print("no")
+
+# sol2
+import sys
+input = sys.stdin.readline
+
+N = int(input())
+strings = []
+for _ in range(N):
+    strings.append(input().rstrip())
+
+print(strings) # ['asdf\n', 'asdfghh\n', 'asdfhhjjjj\n']
+print(len(strings[0])) # 5
+
+for i in strings:
+    if len(i) >= 6 and len(i) <= 9:
+        print("yes")
+    else:
+        print("no")
