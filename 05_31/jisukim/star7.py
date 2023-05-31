@@ -12,16 +12,15 @@ for i in range(N,0,-1):
     print(' '*(N-i) + '*'*(2*i-1))
 
 
-# # sol2)
-# for i in range(1,N):
-#     print(' '*(N-i) + '*'*(2*i-1))
+# sol2)
+for i in range(1,N):
+    print(' '*(N-i) + '*'*(2*i-1))
 
-# for i in reversed(range(1,N)):
-#     print(' '*(N-i) + '*'*(2*i-1))
+for i in reversed(range(1,N)):
+    print(' '*(N-i) + '*'*(2*i-1))
 
 
 # sol3) 재귀
-# 재귀
 
 # 4 1 
 # 3 3 

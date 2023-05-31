@@ -1,23 +1,23 @@
 # 붙임성 좋은 총총이
 
 # sol1
-# import sys; 
-# input = sys.stdin.readline
+import sys; 
+input = sys.stdin.readline
 
-# danceset = {'ChongChong'}
-# N = int(input())
+danceset = {'ChongChong'}
+N = int(input())
 
-# for _ in range(N):
-#     a, b = input().split()
+for _ in range(N):
+    a, b = input().split()
     
-#     if a in danceset:
-#         danceset.add(b)
-#     elif b in danceset:
-#         danceset.add(a)
-#     else:
-#         pass
+    if a in danceset:
+        danceset.add(b)
+    elif b in danceset:
+        danceset.add(a)
+    else:
+        pass
 
-# print(len(danceset))
+print(len(danceset))
 
 # sol2
 import sys; 
