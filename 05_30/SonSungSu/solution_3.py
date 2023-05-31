@@ -22,13 +22,13 @@
 # bottom left,right sp = i + 1
 
 # 반복문
-def solution(x, y):
-    return ("*" * x) + (" " * (y + y)) + ("*" * x)
-n = int(input())
-for i in range(n):
-    print(solution(i + 1, n - i - 1))
-for i in range(n):
-    print(solution(n - i - 1, i + 1))
+# def solution(x, y):
+#     return ("*" * x) + (" " * (y + y)) + ("*" * x)
+# n = int(input())
+# for i in range(n):
+#     print(solution(i + 1, n - i - 1))
+# for i in range(n):
+#     print(solution(n - i - 1, i + 1))
 
 
 # 재귀
