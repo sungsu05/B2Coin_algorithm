@@ -20,6 +20,8 @@ for _ in range(N):
 
 print(cnt) 
         
-# word = input()
+# word = input().rstrip()
 # print(word == 'ENTER') 이러니 False가 나온다.
-# 이유는 word 뒤에 줄바꿈기호 들어가서인듯.. '\n'
+# print(word, 'ENTER')를 해보니
+# 하나는 ENTER 잘 나오고, 하나는 띄어쓰기+ENTER 나온다.
+# input()의 결과값 뒤에 개행문자 \n이 추가되서인듯
