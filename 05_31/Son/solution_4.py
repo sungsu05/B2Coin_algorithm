@@ -1,3 +1,10 @@
+def test(**kwargs):
+    print(kwargs)
+
+
+arr = [1,2,3,4]
+test(*arr)
+
 # # AC https://www.acmicpc.net/problem/5430
 # import sys
 #
@@ -29,3 +36,5 @@
 #         print(solution(arr,func))
 #
 #
+
+
