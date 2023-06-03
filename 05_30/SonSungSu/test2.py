@@ -16,6 +16,8 @@ class ValidatedData():
     @classmethod
     def validated_password(self,password):
         """ 비밀번호 검증 """
+        if password == None:
+            return False
         password_pattern = r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
         password_match = re.match(password_pattern, password)
         return bool(password_match)
@@ -24,6 +26,8 @@ class ValidatedData():
     def validated_username(self,username):
         """ 유저네임 검증 """
         check = [
+            lambda element: element != None,
+            # None값이 아니라면 True
             lambda element: len(element) == len(element.replace(" ", "")),
             # 공백이 포함 되어 있을 경우 False
             lambda element: True if (len(element) > 1 and len(element) < 21) else False,
@@ -37,6 +41,8 @@ class ValidatedData():
     @classmethod
     def validated_email(self,email):
         """ 이메일 검증"""
+        if email == None:
+            return False
         email_pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
         email_match = re.match(email_pattern, email)
         return bool(email_match)
