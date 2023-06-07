@@ -117,6 +117,21 @@ password = 'helloPassword!1'
 birth_date = "030516"
 gender = "2"
 
+last_name_pattern = "길동"
+first_name_pattern = "홍"
+company_name_pattern = "구글"
+registration_number_pattern = '697-19-01824'
+bank_name_pattern = '신한은행'
+account_number_pattern = '783-502-145659'
+
+# address_line_one = models.TextField()
+# address_line_two = models.TextField()
+# state = models.CharField("주",max_length=30)
+# city = models.CharField("도시",max_length=30)
+# postal_code = models.CharField("우편번호",max_length=20)
+# country = models.CharField("국가",max_length=30)
+
+
 
 user_data = {
     "email":email,
